@@ -1,0 +1,23 @@
+{
+  "name": "hookdeck-transformation-switchbot-api-v1_1",
+  "image": "mcr.microsoft.com/devcontainers/base:1-jammy",
+  // https://github.com/devcontainers/images/blob/6a4787aa9326f7bd4fcc30a0fac9174ba7ff0556/src/base-ubuntu/.devcontainer/devcontainer.json#L9
+  "containerUser": "vscode",
+  "containerEnv": {
+    // https://github.com/devcontainers/images/blob/6a4787aa9326f7bd4fcc30a0fac9174ba7ff0556/src/base-ubuntu/.devcontainer/devcontainer.json#L9
+    "HOME": "/home/vscode"
+  },
+  // https://github.com/microsoft/vscode-remote-release/issues/4646#issuecomment-1796972801
+  "remoteUser": "root",
+  "remoteEnv": {},
+  "onCreateCommand": "make -f .devcontainer/onCreateCommand.mk",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "ms-vscode.makefile-tools",
+        "moonrepo.moon-console"
+      ]
+    }
+  }
+}

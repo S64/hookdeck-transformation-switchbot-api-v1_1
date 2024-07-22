@@ -1,0 +1,11 @@
+$schema: 'https://moonrepo.dev/schemas/project.json'
+language: 'javascript'
+tasks:
+  build:
+    command: esbuild --tsconfig=tsconfig.json --format=esm --platform=neutral --bundle=true --minify=true --sourcemap=inline --outfile=dist/main.mjs src/index.ts
+    outputs:
+      - 'dist/**/*'
+  format:
+    command: prettier --write .
+    options:
+      cache: false

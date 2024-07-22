@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "hookdeck-transformation-switchbot-api-v1_1",
+  "devDependencies": {
+    "@moonrepo/cli": "^1.27.2",
+    "@types/crypto-js": "^4.2.2",
+    "esbuild": "^0.23.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "nanoid": "^5.0.7"
+  },
+  "packageManager": "pnpm@9.6.0",
+  "engines": {
+    "node": "20.15.1"
+  }
+}
